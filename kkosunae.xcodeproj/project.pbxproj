@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8280B6BF2A2DD6E20089AE10 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8280B6BE2A2DD6E20089AE10 /* ComposableArchitecture */; };
 		8285B26B2A28AA0500A843DF /* kkosunaeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285B26A2A28AA0500A843DF /* kkosunaeApp.swift */; };
 		8285B26D2A28AA0500A843DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285B26C2A28AA0500A843DF /* ContentView.swift */; };
 		8285B26F2A28AA0700A843DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8285B26E2A28AA0700A843DF /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8280B6BF2A2DD6E20089AE10 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = kkosunae;
+			packageProductDependencies = (
+				8280B6BE2A2DD6E20089AE10 /* ComposableArchitecture */,
+			);
 			productName = kkosunae;
 			productReference = 8285B2672A28AA0500A843DF /* kkosunae.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 8285B25E2A28AA0500A843DF;
+			packageReferences = (
+				8280B6BD2A2DD6E20089AE10 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 8285B2682A28AA0500A843DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -425,6 +433,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +463,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -583,6 +593,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8280B6BD2A2DD6E20089AE10 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8280B6BE2A2DD6E20089AE10 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8280B6BD2A2DD6E20089AE10 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8285B25F2A28AA0500A843DF /* Project object */;
 }
