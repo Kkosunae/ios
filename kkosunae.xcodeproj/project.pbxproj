@@ -10,6 +10,7 @@
 		823120B62A30B89D005DCBA0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823120B52A30B89D005DCBA0 /* MapView.swift */; };
 		823120B82A30B8A7005DCBA0 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823120B72A30B8A7005DCBA0 /* MyPageView.swift */; };
 		823120BA2A30CB4D005DCBA0 /* RootDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823120B92A30CB4D005DCBA0 /* RootDomain.swift */; };
+		8271A3B82A30D3E200726C04 /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271A3B72A30D3E200726C04 /* NaverMapView.swift */; };
 		8280B6BF2A2DD6E20089AE10 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8280B6BE2A2DD6E20089AE10 /* ComposableArchitecture */; };
 		8285B26B2A28AA0500A843DF /* kkosunaeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285B26A2A28AA0500A843DF /* kkosunaeApp.swift */; };
 		8285B26D2A28AA0500A843DF /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285B26C2A28AA0500A843DF /* RootView.swift */; };
@@ -45,6 +46,7 @@
 		823120B52A30B89D005DCBA0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		823120B72A30B8A7005DCBA0 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		823120B92A30CB4D005DCBA0 /* RootDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDomain.swift; sourceTree = "<group>"; };
+		8271A3B72A30D3E200726C04 /* NaverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapView.swift; sourceTree = "<group>"; };
 		8280B6C02A2DDDDD0089AE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8285B2672A28AA0500A843DF /* kkosunae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kkosunae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8285B26A2A28AA0500A843DF /* kkosunaeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kkosunaeApp.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				823120B52A30B89D005DCBA0 /* MapView.swift */,
+				8271A3B72A30D3E200726C04 /* NaverMapView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -201,7 +204,6 @@
 				23F8B4CB7699E05FA3CF36AD /* Pods-kkosunaeTests.debug.xcconfig */,
 				B39D768D837C1B15B341DCE4 /* Pods-kkosunaeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -449,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8271A3B82A30D3E200726C04 /* NaverMapView.swift in Sources */,
 				8285B26D2A28AA0500A843DF /* RootView.swift in Sources */,
 				823120BA2A30CB4D005DCBA0 /* RootDomain.swift in Sources */,
 				823120B82A30B8A7005DCBA0 /* MyPageView.swift in Sources */,
@@ -617,6 +620,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = kkosunae/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "해당 앱은 위치기반 SNS로 게시물을 보고 쓰는데 현재 위치를 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -652,6 +656,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = kkosunae/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "해당 앱은 위치기반 SNS로 게시물을 보고 쓰는데 현재 위치를 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
