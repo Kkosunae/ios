@@ -10,6 +10,7 @@
 		823120B62A30B89D005DCBA0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823120B52A30B89D005DCBA0 /* MapView.swift */; };
 		823120B82A30B8A7005DCBA0 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823120B72A30B8A7005DCBA0 /* MyPageView.swift */; };
 		823120BA2A30CB4D005DCBA0 /* RootDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823120B92A30CB4D005DCBA0 /* RootDomain.swift */; };
+		824459502A3213730041A677 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 8244594F2A3213730041A677 /* KakaoSDK */; };
 		8271A3B82A30D3E200726C04 /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271A3B72A30D3E200726C04 /* NaverMapView.swift */; };
 		8280B6BF2A2DD6E20089AE10 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8280B6BE2A2DD6E20089AE10 /* ComposableArchitecture */; };
 		8285B26B2A28AA0500A843DF /* kkosunaeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285B26A2A28AA0500A843DF /* kkosunaeApp.swift */; };
@@ -75,6 +76,7 @@
 			files = (
 				8280B6BF2A2DD6E20089AE10 /* ComposableArchitecture in Frameworks */,
 				E9EEDDA65937E7924BCE410D /* Pods_kkosunae.framework in Frameworks */,
+				824459502A3213730041A677 /* KakaoSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +229,7 @@
 			name = kkosunae;
 			packageProductDependencies = (
 				8280B6BE2A2DD6E20089AE10 /* ComposableArchitecture */,
+				8244594F2A3213730041A677 /* KakaoSDK */,
 			);
 			productName = kkosunae;
 			productReference = 8285B2672A28AA0500A843DF /* kkosunae.app */;
@@ -305,6 +308,7 @@
 			mainGroup = 8285B25E2A28AA0500A843DF;
 			packageReferences = (
 				8280B6BD2A2DD6E20089AE10 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				8244594E2A3213720041A677 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 			);
 			productRefGroup = 8285B2682A28AA0500A843DF /* Products */;
 			projectDirPath = "";
@@ -801,6 +805,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8244594E2A3213720041A677 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		8280B6BD2A2DD6E20089AE10 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
@@ -812,6 +824,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8244594F2A3213730041A677 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8244594E2A3213720041A677 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
 		8280B6BE2A2DD6E20089AE10 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8280B6BD2A2DD6E20089AE10 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
