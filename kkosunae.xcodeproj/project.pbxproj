@@ -51,6 +51,7 @@
 		823120B92A30CB4D005DCBA0 /* RootDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDomain.swift; sourceTree = "<group>"; };
 		824459522A3214CC0041A677 /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		824459542A32163B0041A677 /* MyPageDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageDomain.swift; sourceTree = "<group>"; };
+		8266740E2A388398008B4F95 /* kkosunae.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kkosunae.entitlements; sourceTree = "<group>"; };
 		8271A3B72A30D3E200726C04 /* NaverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapView.swift; sourceTree = "<group>"; };
 		8280B6C02A2DDDDD0089AE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8285B2672A28AA0500A843DF /* kkosunae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kkosunae.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +175,7 @@
 		8285B2692A28AA0500A843DF /* kkosunae */ = {
 			isa = PBXGroup;
 			children = (
+				8266740E2A388398008B4F95 /* kkosunae.entitlements */,
 				824459512A3214C50041A677 /* Common */,
 				823120B22A30B86E005DCBA0 /* Root */,
 				823120B32A30B87E005DCBA0 /* Map */,
@@ -633,10 +635,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = kkosunae/kkosunae.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kkosunae/Preview Content\"";
-				DEVELOPMENT_TEAM = 6LLMUXG33J;
+				DEVELOPMENT_TEAM = D64MDUWZ72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = kkosunae/Info.plist;
@@ -669,10 +672,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = kkosunae/kkosunae.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kkosunae/Preview Content\"";
-				DEVELOPMENT_TEAM = 6LLMUXG33J;
+				DEVELOPMENT_TEAM = D64MDUWZ72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = kkosunae/Info.plist;

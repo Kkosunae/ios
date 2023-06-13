@@ -9,6 +9,7 @@ import Foundation
 import ComposableArchitecture
 import KakaoSDKAuth
 import KakaoSDKUser
+import AuthenticationServices
 
 struct MyPageDomain: ReducerProtocol {
     struct State: Equatable {
@@ -17,12 +18,15 @@ struct MyPageDomain: ReducerProtocol {
     
     enum Action: Equatable {
         case tapKakaoLogin
+        case tapAppleLogin
     }
     
     func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
         switch action {
         case .tapKakaoLogin:
             kakaoLogin()
+            return .none
+        case .tapAppleLogin:
             return .none
         }
     }
@@ -54,5 +58,9 @@ struct MyPageDomain: ReducerProtocol {
                 }
             }
         }
+    }
+    
+    private func appleLogin() {
+        
     }
 }
