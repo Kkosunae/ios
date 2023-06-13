@@ -6,15 +6,25 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct MyPageView: View {
+    let store: StoreOf<MyPageDomain>
+    
     var body: some View {
-        Text("My Page!")
+        WithViewStore(self.store) { viewStore in
+            Button("카카오 로그인") {
+                viewStore.send(.tapKakaoLogin)
+            }
+        }
     }
 }
 
 struct MyPageView_Previews: PreviewProvider {
     static var previews: some View {
-        MyPageView()
+        MyPageView(
+            store: Store(initialState: MyPageDomain.State(),
+                         reducer: MyPageDomain())
+        )
     }
 }

@@ -11,6 +11,8 @@
 		823120B82A30B8A7005DCBA0 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823120B72A30B8A7005DCBA0 /* MyPageView.swift */; };
 		823120BA2A30CB4D005DCBA0 /* RootDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823120B92A30CB4D005DCBA0 /* RootDomain.swift */; };
 		824459502A3213730041A677 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 8244594F2A3213730041A677 /* KakaoSDK */; };
+		824459532A3214CC0041A677 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824459522A3214CC0041A677 /* Define.swift */; };
+		824459552A32163B0041A677 /* MyPageDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824459542A32163B0041A677 /* MyPageDomain.swift */; };
 		8271A3B82A30D3E200726C04 /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271A3B72A30D3E200726C04 /* NaverMapView.swift */; };
 		8280B6BF2A2DD6E20089AE10 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8280B6BE2A2DD6E20089AE10 /* ComposableArchitecture */; };
 		8285B26B2A28AA0500A843DF /* kkosunaeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285B26A2A28AA0500A843DF /* kkosunaeApp.swift */; };
@@ -47,6 +49,8 @@
 		823120B52A30B89D005DCBA0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		823120B72A30B8A7005DCBA0 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		823120B92A30CB4D005DCBA0 /* RootDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDomain.swift; sourceTree = "<group>"; };
+		824459522A3214CC0041A677 /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		824459542A32163B0041A677 /* MyPageDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageDomain.swift; sourceTree = "<group>"; };
 		8271A3B72A30D3E200726C04 /* NaverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapView.swift; sourceTree = "<group>"; };
 		8280B6C02A2DDDDD0089AE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8285B2672A28AA0500A843DF /* kkosunae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kkosunae.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,8 +136,17 @@
 			isa = PBXGroup;
 			children = (
 				823120B72A30B8A7005DCBA0 /* MyPageView.swift */,
+				824459542A32163B0041A677 /* MyPageDomain.swift */,
 			);
 			path = MyPage;
+			sourceTree = "<group>";
+		};
+		824459512A3214C50041A677 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				824459522A3214CC0041A677 /* Define.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		8285B25E2A28AA0500A843DF = {
@@ -161,6 +174,7 @@
 		8285B2692A28AA0500A843DF /* kkosunae */ = {
 			isa = PBXGroup;
 			children = (
+				824459512A3214C50041A677 /* Common */,
 				823120B22A30B86E005DCBA0 /* Root */,
 				823120B32A30B87E005DCBA0 /* Map */,
 				823120B42A30B880005DCBA0 /* MyPage */,
@@ -455,12 +469,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824459552A32163B0041A677 /* MyPageDomain.swift in Sources */,
 				8271A3B82A30D3E200726C04 /* NaverMapView.swift in Sources */,
 				8285B26D2A28AA0500A843DF /* RootView.swift in Sources */,
 				823120BA2A30CB4D005DCBA0 /* RootDomain.swift in Sources */,
 				823120B82A30B8A7005DCBA0 /* MyPageView.swift in Sources */,
 				823120B62A30B89D005DCBA0 /* MapView.swift in Sources */,
 				8285B26B2A28AA0500A843DF /* kkosunaeApp.swift in Sources */,
+				824459532A3214CC0041A677 /* Define.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

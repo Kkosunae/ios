@@ -11,6 +11,7 @@ import ComposableArchitecture
 struct RootDomain: ReducerProtocol {
     struct State: Equatable {
         var selectedTab = Tab.map
+        var myPageState = MyPageDomain.State()
     }
     
     enum Tab {
@@ -20,21 +21,16 @@ struct RootDomain: ReducerProtocol {
     
     enum Action: Equatable {
         case tapSelected(Tab)
+        case myPage(MyPageDomain.Action)
     }
     
-    var uuid: @Sendable () -> UUID
-    
-    static let live = Self(
-        uuid: { UUID() }
-    )
-    
-    var body: some ReducerProtocol<State, Action> {
-        Reduce { state, action in
-            switch action {
-            case .tapSelected(let tab):
-                state.selectedTab = tab
-                return .none
-            }
+    func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
+        switch action {
+        case .tapSelected(let tab):
+            state.selectedTab = tab
+            return .none
+        case .myPage:
+            return .none
         }
     }
 }

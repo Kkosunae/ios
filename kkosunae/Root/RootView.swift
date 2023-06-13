@@ -9,7 +9,7 @@ import SwiftUI
 import ComposableArchitecture
 
 struct RootView: View {
-    let store: Store<RootDomain.State, RootDomain.Action>
+    let store: StoreOf<RootDomain>
     
     var body: some View {
         WithViewStore(self.store) { viewStore in
@@ -26,12 +26,15 @@ struct RootView: View {
                     }
                     .tag(RootDomain.Tab.map)
                 
-                MyPageView()
-                    .tabItem {
-                        Image(systemName: "person")
-                        Text("마이페이지")
-                    }
-                    .tag(RootDomain.Tab.myPage)
+                MyPageView(
+                    store: Store(initialState: MyPageDomain.State(),
+                                 reducer: MyPageDomain())
+                )
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("마이페이지")
+                }
+                .tag(RootDomain.Tab.myPage)
             }
         }
     }
@@ -41,12 +44,9 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         RootView(
             store: Store(
-                initialState: RootDomain.State()
-            ) {
-                RootDomain(
-                    uuid: { UUID() }
-                )
-            }
+                initialState: RootDomain.State(),
+                reducer: RootDomain()
+            )
         )
     }
 }
