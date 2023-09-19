@@ -54,12 +54,12 @@
 		82A1B6352AB9C58E00A27763 /* kkosunae */ = {
 			isa = PBXGroup;
 			children = (
-				82A1B64F2AB9C9B300A27763 /* ViewModel */,
-				82A1B64E2AB9C9AC00A27763 /* View */,
-				82A1B64D2AB9C9A700A27763 /* Service */,
-				82A1B64C2AB9C9A100A27763 /* Repository */,
-				82A1B64B2AB9C99C00A27763 /* Model */,
 				82A1B64A2AB9C98F00A27763 /* App */,
+				82A1B64C2AB9C9A100A27763 /* Repository */,
+				82A1B64D2AB9C9A700A27763 /* Service */,
+				82A1B64B2AB9C99C00A27763 /* Model */,
+				82A1B64E2AB9C9AC00A27763 /* View */,
+				82A1B64F2AB9C9B300A27763 /* ViewModel */,
 			);
 			path = kkosunae;
 			sourceTree = "<group>";
