@@ -16,10 +16,23 @@ class HomeViewController: UIViewController {
     
     
     // View
+    let customNavigationView: CustomNavigationView = {
+        let view = CustomNavigationView()
+        view.titleLabel.text = "홈"
+        
+        return view
+    }()
     
     // Layout
     private func setupLayout() {
         self.view.backgroundColor = .white
-        self.navigationItem.title = "홈"
+        self.navigationController?.navigationBar.isHidden = true
+        
+        view.addSubview(customNavigationView)
+        customNavigationView.snp.makeConstraints { make in
+            make.trailing.leading.equalTo(0)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.height.equalTo(50)
+        }
     }
 }

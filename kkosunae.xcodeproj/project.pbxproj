@@ -22,6 +22,7 @@
 		82A1B6612AB9CD5300A27763 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A1B6602AB9CD5300A27763 /* CommunityViewController.swift */; };
 		82A1B6632AB9CD5F00A27763 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A1B6622AB9CD5F00A27763 /* MyPageViewController.swift */; };
 		82A1B6652AB9CDA000A27763 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A1B6642AB9CDA000A27763 /* TabBarController.swift */; };
+		82A1B66D2AB9D38C00A27763 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A1B66C2AB9D38C00A27763 /* CustomNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		82A1B6602AB9CD5300A27763 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		82A1B6622AB9CD5F00A27763 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		82A1B6642AB9CDA000A27763 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		82A1B66C2AB9D38C00A27763 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 		82A1B66B2AB9D19000A27763 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				82A1B66C2AB9D38C00A27763 /* CustomNavigationView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				82A1B65F2AB9CD3E00A27763 /* PointViewController.swift in Sources */,
 				82A1B65D2AB9CD3700A27763 /* MapViewController.swift in Sources */,
 				82A1B65B2AB9CD3200A27763 /* HomeViewController.swift in Sources */,
+				82A1B66D2AB9D38C00A27763 /* CustomNavigationView.swift in Sources */,
 				82A1B6612AB9CD5300A27763 /* CommunityViewController.swift in Sources */,
 				82A1B6632AB9CD5F00A27763 /* MyPageViewController.swift in Sources */,
 			);
