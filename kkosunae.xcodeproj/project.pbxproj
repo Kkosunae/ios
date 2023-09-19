@@ -120,13 +120,14 @@
 		82A1B64E2AB9C9AC00A27763 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				82A1B66B2AB9D19000A27763 /* Common */,
+				82A1B66A2AB9D17D00A27763 /* Home */,
+				82A1B6692AB9D16F00A27763 /* Map */,
+				82A1B6682AB9D16D00A27763 /* Point */,
+				82A1B6672AB9D16600A27763 /* Community */,
+				82A1B6662AB9D16200A27763 /* MyPage */,
 				82A1B63A2AB9C58E00A27763 /* SplashViewController.swift */,
 				82A1B6642AB9CDA000A27763 /* TabBarController.swift */,
-				82A1B65A2AB9CD3200A27763 /* HomeViewController.swift */,
-				82A1B65C2AB9CD3700A27763 /* MapViewController.swift */,
-				82A1B65E2AB9CD3E00A27763 /* PointViewController.swift */,
-				82A1B6602AB9CD5300A27763 /* CommunityViewController.swift */,
-				82A1B6622AB9CD5F00A27763 /* MyPageViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +137,53 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		82A1B6662AB9D16200A27763 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				82A1B6622AB9CD5F00A27763 /* MyPageViewController.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		82A1B6672AB9D16600A27763 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				82A1B6602AB9CD5300A27763 /* CommunityViewController.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		82A1B6682AB9D16D00A27763 /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				82A1B65E2AB9CD3E00A27763 /* PointViewController.swift */,
+			);
+			path = Point;
+			sourceTree = "<group>";
+		};
+		82A1B6692AB9D16F00A27763 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				82A1B65C2AB9CD3700A27763 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		82A1B66A2AB9D17D00A27763 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				82A1B65A2AB9CD3200A27763 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		82A1B66B2AB9D19000A27763 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
