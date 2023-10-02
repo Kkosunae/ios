@@ -44,6 +44,7 @@
 		8297D5252ACAE1A100D1762D /* Kkosunae++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kkosunae++Bundle.swift"; sourceTree = "<group>"; };
 		8297D5272ACAE48900D1762D /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 		8297D5292ACAE53400D1762D /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
+		8297D52D2ACAEC1900D1762D /* kkosunae.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kkosunae.entitlements; sourceTree = "<group>"; };
 		82A1B6332AB9C58E00A27763 /* kkosunae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kkosunae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A1B6362AB9C58E00A27763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82A1B6382AB9C58E00A27763 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 		82A1B6352AB9C58E00A27763 /* kkosunae */ = {
 			isa = PBXGroup;
 			children = (
+				8297D52D2ACAEC1900D1762D /* kkosunae.entitlements */,
 				82A1B64A2AB9C98F00A27763 /* App */,
 				82A1B64C2AB9C9A100A27763 /* Repository */,
 				82A1B64D2AB9C9A700A27763 /* Service */,
@@ -486,6 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = kkosunae/kkosunae.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D64MDUWZ72;
@@ -517,6 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = kkosunae/kkosunae.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D64MDUWZ72;

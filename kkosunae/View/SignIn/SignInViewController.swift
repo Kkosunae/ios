@@ -22,7 +22,8 @@ class SignInViewController: UIViewController {
     
     private func bind() {
         let input = SignInViewModel.Input(
-            tapKakaoLogin: kakaoLoginButton.rx.tap.asDriver()
+            tapKakaoLogin: kakaoLoginButton.rx.tap.asDriver(),
+            tapAppleLogin: appleLoginButton.rx.tap.asDriver()
         )
         let output = viewModel.transform(input: input)
         
@@ -49,13 +50,28 @@ class SignInViewController: UIViewController {
         return button
     }()
     
+    private let appleLoginButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("애플 로그인", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        
+        return button
+    }()
+    
     // Layout
     private func setupLayout() {
         self.view.backgroundColor = .white
         
         self.view.addSubview(kakaoLoginButton)
         kakaoLoginButton.snp.makeConstraints { make in
-            make.center.equalToSuperview()
+            make.centerY.equalToSuperview().offset(-30)
+            make.centerX.equalToSuperview()
+        }
+        
+        self.view.addSubview(appleLoginButton)
+        appleLoginButton.snp.makeConstraints { make in
+            make.centerY.equalToSuperview().offset(30)
+            make.centerX.equalToSuperview()
         }
     }
 }

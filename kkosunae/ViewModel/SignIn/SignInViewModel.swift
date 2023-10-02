@@ -14,6 +14,7 @@ class SignInViewModel: ViewModel {
     
     struct Input {
         let tapKakaoLogin: Driver<Void>
+        let tapAppleLogin: Driver<Void>
     }
     
     struct Output {
@@ -22,18 +23,37 @@ class SignInViewModel: ViewModel {
     }
     
     func transform(input: Input) -> Output {
+        let signInService = SignInService()
         let signInResponse = PublishSubject<Bool>()
         
         input.tapKakaoLogin
             .asObservable()
-            .flatMap { SignInService.signInKakao() }
+            .subscribe(onNext: { _ in
+                signInService.signInKakao()
+            }, onError: { error in
+                print(error.localizedDescription)
+            })
+            .disposed(by: disposeBag)
+        
+        input.tapAppleLogin
+            .asObservable()
+            .subscribe(onNext: { _ in
+                signInService.signInApple()
+            }, onError: { error in
+                print(error.localizedDescription)
+            })
+            .disposed(by: disposeBag)
+        
+        signInService.signInResponse
+            .asObservable()
             .subscribe(onNext: { response in
-                print(response.accessToken)
+                print("token = \(response.accessToken)")
                 signInResponse.onNext(true)
             }, onError: { error in
                 print(error.localizedDescription)
             })
             .disposed(by: disposeBag)
+        
         return Output(signInResponse: signInResponse.asObservable())
     }
 }
