@@ -131,4 +131,6 @@ iOSInjectionProject/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+# Security.plist
+kkosunae/App/Security.plist
 # End of https://www.toptal.com/developers/gitignore/api/macos,xcode,swift

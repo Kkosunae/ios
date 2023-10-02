@@ -21,17 +21,17 @@ class SplashViewModel: ViewModel {
     }
     
     func transform(input: Input) -> Output {
-        let isLogin = BehaviorSubject(value: false)
+        let isLogin = PublishRelay<Bool>()
         
         // TODO: - Check Login
         input.viewWillAppear
             .asObservable()
             .throttle(.seconds(1), scheduler: MainScheduler.instance)
             .subscribe(onNext: { _ in
-                isLogin.onNext(false)
+                isLogin.accept(false)
             })
             .disposed(by: disposeBag)
         
-        return Output(isLogin: isLogin)
+        return Output(isLogin: isLogin.asObservable())
     }
 }

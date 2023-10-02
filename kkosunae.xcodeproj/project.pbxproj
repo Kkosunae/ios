@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		8297D5152ACACDBF00D1762D /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5142ACACDBF00D1762D /* SplashViewModel.swift */; };
 		8297D5172ACACEE000D1762D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5162ACACEE000D1762D /* ViewModel.swift */; };
+		8297D51A2ACAD3D700D1762D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5192ACAD3D700D1762D /* SignInViewController.swift */; };
+		8297D51D2ACAD47D00D1762D /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D51C2ACAD47D00D1762D /* SignInViewModel.swift */; };
+		8297D5202ACAD97200D1762D /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8297D51F2ACAD97200D1762D /* KakaoSDKAuth */; };
+		8297D5222ACAD97200D1762D /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 8297D5212ACAD97200D1762D /* KakaoSDKUser */; };
+		8297D5242ACAE15B00D1762D /* Security.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8297D5232ACAE15B00D1762D /* Security.plist */; };
+		8297D5262ACAE1A100D1762D /* Kkosunae++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5252ACAE1A100D1762D /* Kkosunae++Bundle.swift */; };
+		8297D5282ACAE48900D1762D /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5272ACAE48900D1762D /* SignInService.swift */; };
+		8297D52A2ACAE53400D1762D /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5292ACAE53400D1762D /* SignInRequest.swift */; };
 		82A1B6372AB9C58E00A27763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A1B6362AB9C58E00A27763 /* AppDelegate.swift */; };
 		82A1B6392AB9C58E00A27763 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A1B6382AB9C58E00A27763 /* SceneDelegate.swift */; };
 		82A1B63B2AB9C58E00A27763 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A1B63A2AB9C58E00A27763 /* SplashViewController.swift */; };
@@ -30,6 +38,12 @@
 /* Begin PBXFileReference section */
 		8297D5142ACACDBF00D1762D /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		8297D5162ACACEE000D1762D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8297D5192ACAD3D700D1762D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		8297D51C2ACAD47D00D1762D /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		8297D5232ACAE15B00D1762D /* Security.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Security.plist; sourceTree = "<group>"; };
+		8297D5252ACAE1A100D1762D /* Kkosunae++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kkosunae++Bundle.swift"; sourceTree = "<group>"; };
+		8297D5272ACAE48900D1762D /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
+		8297D5292ACAE53400D1762D /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
 		82A1B6332AB9C58E00A27763 /* kkosunae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kkosunae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A1B6362AB9C58E00A27763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82A1B6382AB9C58E00A27763 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,8 +67,10 @@
 			files = (
 				82A1B6562AB9CBE700A27763 /* RxSwift in Frameworks */,
 				82A1B6592AB9CC1100A27763 /* SnapKit in Frameworks */,
+				8297D5222ACAD97200D1762D /* KakaoSDKUser in Frameworks */,
 				82A1B6542AB9CBE700A27763 /* RxRelay in Frameworks */,
 				82A1B6522AB9CBE700A27763 /* RxCocoa in Frameworks */,
+				8297D5202ACAD97200D1762D /* KakaoSDKAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +91,22 @@
 				8297D5142ACACDBF00D1762D /* SplashViewModel.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		8297D5182ACAD3A300D1762D /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				8297D5192ACAD3D700D1762D /* SignInViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		8297D51B2ACAD47000D1762D /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				8297D51C2ACAD47D00D1762D /* SignInViewModel.swift */,
+			);
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 		82A1B62A2AB9C58E00A27763 = {
@@ -110,10 +142,12 @@
 			isa = PBXGroup;
 			children = (
 				82A1B6362AB9C58E00A27763 /* AppDelegate.swift */,
+				8297D5252ACAE1A100D1762D /* Kkosunae++Bundle.swift */,
 				82A1B6382AB9C58E00A27763 /* SceneDelegate.swift */,
 				82A1B63F2AB9C59000A27763 /* Assets.xcassets */,
 				82A1B6412AB9C59000A27763 /* LaunchScreen.storyboard */,
 				82A1B6442AB9C59000A27763 /* Info.plist */,
+				8297D5232ACAE15B00D1762D /* Security.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -121,6 +155,7 @@
 		82A1B64B2AB9C99C00A27763 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8297D5292ACAE53400D1762D /* SignInRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +170,7 @@
 		82A1B64D2AB9C9A700A27763 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				8297D5272ACAE48900D1762D /* SignInService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -142,8 +178,9 @@
 		82A1B64E2AB9C9AC00A27763 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8297D5122ACACDA400D1762D /* Splash */,
 				82A1B66B2AB9D19000A27763 /* Common */,
+				8297D5122ACACDA400D1762D /* Splash */,
+				8297D5182ACAD3A300D1762D /* SignIn */,
 				82A1B66A2AB9D17D00A27763 /* Home */,
 				82A1B6692AB9D16F00A27763 /* Map */,
 				82A1B6682AB9D16D00A27763 /* Point */,
@@ -158,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				8297D5132ACACDB200D1762D /* Splash */,
+				8297D51B2ACAD47000D1762D /* SignIn */,
 				8297D5162ACACEE000D1762D /* ViewModel.swift */,
 			);
 			path = ViewModel;
@@ -232,6 +270,8 @@
 				82A1B6532AB9CBE700A27763 /* RxRelay */,
 				82A1B6552AB9CBE700A27763 /* RxSwift */,
 				82A1B6582AB9CC1100A27763 /* SnapKit */,
+				8297D51F2ACAD97200D1762D /* KakaoSDKAuth */,
+				8297D5212ACAD97200D1762D /* KakaoSDKUser */,
 			);
 			productName = kkosunae;
 			productReference = 82A1B6332AB9C58E00A27763 /* kkosunae.app */;
@@ -264,6 +304,7 @@
 			packageReferences = (
 				82A1B6502AB9CBE700A27763 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				82A1B6572AB9CC1100A27763 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				8297D51E2ACAD97200D1762D /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 			);
 			productRefGroup = 82A1B6342AB9C58E00A27763 /* Products */;
 			projectDirPath = "";
@@ -280,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82A1B6432AB9C59000A27763 /* LaunchScreen.storyboard in Resources */,
+				8297D5242ACAE15B00D1762D /* Security.plist in Resources */,
 				82A1B6402AB9C59000A27763 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,12 +338,17 @@
 				82A1B6392AB9C58E00A27763 /* SceneDelegate.swift in Sources */,
 				82A1B6652AB9CDA000A27763 /* TabBarController.swift in Sources */,
 				8297D5152ACACDBF00D1762D /* SplashViewModel.swift in Sources */,
+				8297D51A2ACAD3D700D1762D /* SignInViewController.swift in Sources */,
 				82A1B65F2AB9CD3E00A27763 /* PointViewController.swift in Sources */,
+				8297D5282ACAE48900D1762D /* SignInService.swift in Sources */,
 				82A1B65D2AB9CD3700A27763 /* MapViewController.swift in Sources */,
+				8297D51D2ACAD47D00D1762D /* SignInViewModel.swift in Sources */,
 				82A1B65B2AB9CD3200A27763 /* HomeViewController.swift in Sources */,
 				82A1B66D2AB9D38C00A27763 /* CustomNavigationView.swift in Sources */,
+				8297D52A2ACAE53400D1762D /* SignInRequest.swift in Sources */,
 				82A1B6612AB9CD5300A27763 /* CommunityViewController.swift in Sources */,
 				8297D5172ACACEE000D1762D /* ViewModel.swift in Sources */,
+				8297D5262ACAE1A100D1762D /* Kkosunae++Bundle.swift in Sources */,
 				82A1B6632AB9CD5F00A27763 /* MyPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +567,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8297D51E2ACAD97200D1762D /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		82A1B6502AB9CBE700A27763 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -539,6 +594,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8297D51F2ACAD97200D1762D /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8297D51E2ACAD97200D1762D /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		8297D5212ACAD97200D1762D /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8297D51E2ACAD97200D1762D /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
 		82A1B6512AB9CBE700A27763 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 82A1B6502AB9CBE700A27763 /* XCRemoteSwiftPackageReference "RxSwift" */;

@@ -15,7 +15,7 @@ class SplashViewController: UIViewController {
     private var disposeBag = DisposeBag()
     
     private var viewWillAppear = PublishSubject<Void>()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // TODO: - Splash
@@ -38,7 +38,7 @@ class SplashViewController: UIViewController {
                     self?.moveToTabBarController()
                 } else {
                     // Fail login
-                    print("fail login")
+                    self?.moveToSigninViewController()
                 }
             })
             .disposed(by: disposeBag)
@@ -46,6 +46,10 @@ class SplashViewController: UIViewController {
     
     private func moveToTabBarController() {
         UIApplication.shared.windows.first?.rootViewController = TabBarController()
+    }
+    
+    private func moveToSigninViewController() {
+        UIApplication.shared.windows.first?.rootViewController = SignInViewController()
     }
 }
 
