@@ -17,6 +17,8 @@
 		8297D5262ACAE1A100D1762D /* Kkosunae++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5252ACAE1A100D1762D /* Kkosunae++Bundle.swift */; };
 		8297D5282ACAE48900D1762D /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5272ACAE48900D1762D /* SignInService.swift */; };
 		8297D52A2ACAE53400D1762D /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5292ACAE53400D1762D /* SignInRequest.swift */; };
+		8297D5302ACC2E6700D1762D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D52F2ACC2E6700D1762D /* SignUpViewController.swift */; };
+		8297D5332ACC2FC300D1762D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5322ACC2FC300D1762D /* SignUpViewModel.swift */; };
 		82A1B6372AB9C58E00A27763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A1B6362AB9C58E00A27763 /* AppDelegate.swift */; };
 		82A1B6392AB9C58E00A27763 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A1B6382AB9C58E00A27763 /* SceneDelegate.swift */; };
 		82A1B63B2AB9C58E00A27763 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A1B63A2AB9C58E00A27763 /* SplashViewController.swift */; };
@@ -45,6 +47,8 @@
 		8297D5272ACAE48900D1762D /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 		8297D5292ACAE53400D1762D /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
 		8297D52D2ACAEC1900D1762D /* kkosunae.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kkosunae.entitlements; sourceTree = "<group>"; };
+		8297D52F2ACC2E6700D1762D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8297D5322ACC2FC300D1762D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		82A1B6332AB9C58E00A27763 /* kkosunae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kkosunae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A1B6362AB9C58E00A27763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82A1B6382AB9C58E00A27763 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +112,22 @@
 				8297D51C2ACAD47D00D1762D /* SignInViewModel.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		8297D52E2ACC2E5300D1762D /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				8297D52F2ACC2E6700D1762D /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		8297D5312ACC2FB200D1762D /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				8297D5322ACC2FC300D1762D /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		82A1B62A2AB9C58E00A27763 = {
@@ -183,6 +203,7 @@
 				82A1B66B2AB9D19000A27763 /* Common */,
 				8297D5122ACACDA400D1762D /* Splash */,
 				8297D5182ACAD3A300D1762D /* SignIn */,
+				8297D52E2ACC2E5300D1762D /* SignUp */,
 				82A1B66A2AB9D17D00A27763 /* Home */,
 				82A1B6692AB9D16F00A27763 /* Map */,
 				82A1B6682AB9D16D00A27763 /* Point */,
@@ -198,6 +219,7 @@
 			children = (
 				8297D5132ACACDB200D1762D /* Splash */,
 				8297D51B2ACAD47000D1762D /* SignIn */,
+				8297D5312ACC2FB200D1762D /* SignUp */,
 				8297D5162ACACEE000D1762D /* ViewModel.swift */,
 			);
 			path = ViewModel;
@@ -340,7 +362,9 @@
 				82A1B6392AB9C58E00A27763 /* SceneDelegate.swift in Sources */,
 				82A1B6652AB9CDA000A27763 /* TabBarController.swift in Sources */,
 				8297D5152ACACDBF00D1762D /* SplashViewModel.swift in Sources */,
+				8297D5332ACC2FC300D1762D /* SignUpViewModel.swift in Sources */,
 				8297D51A2ACAD3D700D1762D /* SignInViewController.swift in Sources */,
+				8297D5302ACC2E6700D1762D /* SignUpViewController.swift in Sources */,
 				82A1B65F2AB9CD3E00A27763 /* PointViewController.swift in Sources */,
 				8297D5282ACAE48900D1762D /* SignInService.swift in Sources */,
 				82A1B65D2AB9CD3700A27763 /* MapViewController.swift in Sources */,

@@ -48,7 +48,7 @@ class SignInViewModel: ViewModel {
             .asObservable()
             .subscribe(onNext: { response in
                 print("token = \(response.accessToken)")
-                signInResponse.onNext(true)
+                signInResponse.onNext(false)
             }, onError: { error in
                 print(error.localizedDescription)
             })

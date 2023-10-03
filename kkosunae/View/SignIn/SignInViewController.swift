@@ -35,7 +35,7 @@ class SignInViewController: UIViewController {
                     UIApplication.shared.windows.first?.rootViewController = TabBarController()
                 } else {
                     // Go to sign up
-                    UIApplication.shared.windows.first?.rootViewController = TabBarController()
+                    UIApplication.shared.windows.first?.rootViewController = SignUpViewController()
                 }
             })
             .disposed(by: disposeBag)
