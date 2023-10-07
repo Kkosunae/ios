@@ -14,11 +14,12 @@
 		8297D5202ACAD97200D1762D /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8297D51F2ACAD97200D1762D /* KakaoSDKAuth */; };
 		8297D5222ACAD97200D1762D /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 8297D5212ACAD97200D1762D /* KakaoSDKUser */; };
 		8297D5242ACAE15B00D1762D /* Security.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8297D5232ACAE15B00D1762D /* Security.plist */; };
-		8297D5262ACAE1A100D1762D /* Kkosunae++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5252ACAE1A100D1762D /* Kkosunae++Bundle.swift */; };
+		8297D5262ACAE1A100D1762D /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5252ACAE1A100D1762D /* Bundle+Extension.swift */; };
 		8297D5282ACAE48900D1762D /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5272ACAE48900D1762D /* SignInService.swift */; };
 		8297D52A2ACAE53400D1762D /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5292ACAE53400D1762D /* SignInRequest.swift */; };
 		8297D5302ACC2E6700D1762D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D52F2ACC2E6700D1762D /* SignUpViewController.swift */; };
 		8297D5332ACC2FC300D1762D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5322ACC2FC300D1762D /* SignUpViewModel.swift */; };
+		8297D5362ACC331700D1762D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5352ACC331700D1762D /* UIColor+Extension.swift */; };
 		82A1B6372AB9C58E00A27763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A1B6362AB9C58E00A27763 /* AppDelegate.swift */; };
 		82A1B6392AB9C58E00A27763 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A1B6382AB9C58E00A27763 /* SceneDelegate.swift */; };
 		82A1B63B2AB9C58E00A27763 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A1B63A2AB9C58E00A27763 /* SplashViewController.swift */; };
@@ -43,12 +44,13 @@
 		8297D5192ACAD3D700D1762D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		8297D51C2ACAD47D00D1762D /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		8297D5232ACAE15B00D1762D /* Security.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Security.plist; sourceTree = "<group>"; };
-		8297D5252ACAE1A100D1762D /* Kkosunae++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kkosunae++Bundle.swift"; sourceTree = "<group>"; };
+		8297D5252ACAE1A100D1762D /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		8297D5272ACAE48900D1762D /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 		8297D5292ACAE53400D1762D /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
 		8297D52D2ACAEC1900D1762D /* kkosunae.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kkosunae.entitlements; sourceTree = "<group>"; };
 		8297D52F2ACC2E6700D1762D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8297D5322ACC2FC300D1762D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		8297D5352ACC331700D1762D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		82A1B6332AB9C58E00A27763 /* kkosunae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kkosunae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A1B6362AB9C58E00A27763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82A1B6382AB9C58E00A27763 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,15 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
+		8297D5342ACC32F900D1762D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8297D5252ACAE1A100D1762D /* Bundle+Extension.swift */,
+				8297D5352ACC331700D1762D /* UIColor+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		82A1B62A2AB9C58E00A27763 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +162,7 @@
 			children = (
 				8297D52D2ACAEC1900D1762D /* kkosunae.entitlements */,
 				82A1B64A2AB9C98F00A27763 /* App */,
+				8297D5342ACC32F900D1762D /* Utils */,
 				82A1B64C2AB9C9A100A27763 /* Repository */,
 				82A1B64D2AB9C9A700A27763 /* Service */,
 				82A1B64B2AB9C99C00A27763 /* Model */,
@@ -164,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				82A1B6362AB9C58E00A27763 /* AppDelegate.swift */,
-				8297D5252ACAE1A100D1762D /* Kkosunae++Bundle.swift */,
 				82A1B6382AB9C58E00A27763 /* SceneDelegate.swift */,
 				82A1B63F2AB9C59000A27763 /* Assets.xcassets */,
 				82A1B6412AB9C59000A27763 /* LaunchScreen.storyboard */,
@@ -374,8 +385,9 @@
 				8297D52A2ACAE53400D1762D /* SignInRequest.swift in Sources */,
 				82A1B6612AB9CD5300A27763 /* CommunityViewController.swift in Sources */,
 				8297D5172ACACEE000D1762D /* ViewModel.swift in Sources */,
-				8297D5262ACAE1A100D1762D /* Kkosunae++Bundle.swift in Sources */,
+				8297D5262ACAE1A100D1762D /* Bundle+Extension.swift in Sources */,
 				82A1B6632AB9CD5F00A27763 /* MyPageViewController.swift in Sources */,
+				8297D5362ACC331700D1762D /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
