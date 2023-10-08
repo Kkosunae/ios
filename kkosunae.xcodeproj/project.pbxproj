@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		825540C82AD28EA40067CE22 /* WalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825540C72AD28EA40067CE22 /* WalkView.swift */; };
+		825540CB2AD28FD60067CE22 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825540CA2AD28FD60067CE22 /* HomeViewModel.swift */; };
+		825540CD2AD2926E0067CE22 /* WalkResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825540CC2AD2926E0067CE22 /* WalkResultView.swift */; };
 		8297D5152ACACDBF00D1762D /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5142ACACDBF00D1762D /* SplashViewModel.swift */; };
 		8297D5172ACACEE000D1762D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5162ACACEE000D1762D /* ViewModel.swift */; };
 		8297D51A2ACAD3D700D1762D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297D5192ACAD3D700D1762D /* SignInViewController.swift */; };
@@ -39,6 +42,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		825540C72AD28EA40067CE22 /* WalkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkView.swift; sourceTree = "<group>"; };
+		825540CA2AD28FD60067CE22 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		825540CC2AD2926E0067CE22 /* WalkResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkResultView.swift; sourceTree = "<group>"; };
 		8297D5142ACACDBF00D1762D /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		8297D5162ACACEE000D1762D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		8297D5192ACAD3D700D1762D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		825540C92AD28FCF0067CE22 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				825540CA2AD28FD60067CE22 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		8297D5122ACACDA400D1762D /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +242,7 @@
 		82A1B64F2AB9C9B300A27763 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				825540C92AD28FCF0067CE22 /* Home */,
 				8297D5132ACACDB200D1762D /* Splash */,
 				8297D51B2ACAD47000D1762D /* SignIn */,
 				8297D5312ACC2FB200D1762D /* SignUp */,
@@ -272,6 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				82A1B65A2AB9CD3200A27763 /* HomeViewController.swift */,
+				825540CC2AD2926E0067CE22 /* WalkResultView.swift */,
+				825540C72AD28EA40067CE22 /* WalkView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -369,8 +386,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				82A1B63B2AB9C58E00A27763 /* SplashViewController.swift in Sources */,
+				825540CB2AD28FD60067CE22 /* HomeViewModel.swift in Sources */,
 				82A1B6372AB9C58E00A27763 /* AppDelegate.swift in Sources */,
 				82A1B6392AB9C58E00A27763 /* SceneDelegate.swift in Sources */,
+				825540CD2AD2926E0067CE22 /* WalkResultView.swift in Sources */,
 				82A1B6652AB9CDA000A27763 /* TabBarController.swift in Sources */,
 				8297D5152ACACDBF00D1762D /* SplashViewModel.swift in Sources */,
 				8297D5332ACC2FC300D1762D /* SignUpViewModel.swift in Sources */,
@@ -387,6 +406,7 @@
 				8297D5172ACACEE000D1762D /* ViewModel.swift in Sources */,
 				8297D5262ACAE1A100D1762D /* Bundle+Extension.swift in Sources */,
 				82A1B6632AB9CD5F00A27763 /* MyPageViewController.swift in Sources */,
+				825540C82AD28EA40067CE22 /* WalkView.swift in Sources */,
 				8297D5362ACC331700D1762D /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,7 +28,7 @@ class SplashViewModel: ViewModel {
             .asObservable()
             .throttle(.seconds(1), scheduler: MainScheduler.instance)
             .subscribe(onNext: { _ in
-                isLogin.accept(false)
+                isLogin.accept(true)
             })
             .disposed(by: disposeBag)
         
