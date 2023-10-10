@@ -40,6 +40,7 @@ class WalkResultView: UIView {
         let label = UILabel()
         label.text = "내가 찍은 발도장"
         label.font = .systemFont(ofSize: 10)
+        label.adjustsFontSizeToFitWidth = true
         
         return label
     }()
@@ -93,6 +94,7 @@ class WalkResultView: UIView {
         self.addSubview(footmarkTitleLabel)
         footmarkTitleLabel.snp.makeConstraints { make in
             make.top.equalTo(divisionView.snp.top).offset(16)
+            make.leading.equalTo(graphView.snp.trailing).offset(2)
             make.trailing.equalTo(divisionView.snp.leading).offset(-12)
         }
         
