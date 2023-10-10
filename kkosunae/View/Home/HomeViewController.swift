@@ -46,6 +46,14 @@ class HomeViewController: UIViewController {
         return view
     }()
     
+    let hotFootmarkTitleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "핫 발자국"
+        label.font = .boldSystemFont(ofSize: 15)
+        
+        return label
+    }()
+    
     // MARK: - Layout
     private func setupLayout() {
         self.view.backgroundColor = .white
@@ -85,6 +93,13 @@ class HomeViewController: UIViewController {
             make.trailing.equalToSuperview().offset(-24)
             make.height.equalTo(120)
             make.bottom.equalToSuperview() // For scrolling to work, the bottom of the last view must be the same as the super view.
+        }
+        
+        contentView.addSubview(hotFootmarkTitleLabel)
+        hotFootmarkTitleLabel.snp.makeConstraints { make in
+            make.top.equalTo(walkResultView.snp.bottom).offset(28)
+            make.leading.equalToSuperview().offset(24)
+            make.trailing.equalToSuperview().offset(-24)
         }
     }
 }
