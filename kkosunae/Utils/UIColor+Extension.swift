@@ -26,7 +26,35 @@ extension UIColor {
                   alpha: alpha)
     }
     
-    static var primaryColor: UIColor {
+    static var visvisColor: UIColor {
         return UIColor(hexCode: "FFE888")
+    }
+    
+    static var goldenYellowColor: UIColor {
+        return UIColor(hexCode: "F7C451")
+    }
+    
+    static var shakespeareColor: UIColor {
+        return UIColor(hexCode: "739ABB")
+    }
+    
+    static var creamColor: UIColor {
+        return UIColor(hexCode: "FFF7E1")
+    }
+    
+    static var greenLeafColor: UIColor {
+        return UIColor(hexCode: "467505")
+    }
+    
+    static var orangeRedColor: UIColor {
+        return UIColor(hexCode: "FF4200")
+    }
+    
+    static var nightBlackColor: UIColor {
+        return UIColor(hexCode: "353535")
+    }
+    
+    static var kkoWhiteColor: UIColor {
+        return UIColor(hexCode: "FFFFFF")
     }
 }
