@@ -10,6 +10,13 @@ import SnapKit
 import RxSwift
 
 class CustomNavigationView: UIView {
+    let backgroundView: UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(named: "img_navigation_background")
+        
+        return view
+    }()
+    
     let logoImageView: UIImageView = {
         let view = UIImageView()
         view.image = UIImage(systemName: "pawprint.fill")
@@ -17,25 +24,16 @@ class CustomNavigationView: UIView {
         return view
     }()
     
-    let titleLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Title"
-        label.textColor = .black
-        label.font = .boldSystemFont(ofSize: 14)
+    let titleImage: UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(named: "img_title")
         
-        return label
+        return view
     }()
     
     let notificationButton: UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(systemName: "bell"), for: .normal)
-        
-        return button
-    }()
-    
-    let moreButton: UIButton = {
-        let button = UIButton()
-        button.setImage(UIImage(systemName: "list.bullet"), for: .normal)
+        button.setImage(UIImage(named: "icon_notification"), for: .normal)
         
         return button
     }()
@@ -53,28 +51,28 @@ class CustomNavigationView: UIView {
     private func setupLayout() {
         backgroundColor = .white
         
-        addSubview(logoImageView)
-        logoImageView.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.leading.equalTo(12)
+        addSubview(backgroundView)
+        backgroundView.snp.makeConstraints { make in
+            make.top.leading.trailing.bottom.equalToSuperview()
         }
         
-        addSubview(titleLabel)
-        titleLabel.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
+        backgroundView.addSubview(logoImageView)
+        logoImageView.snp.makeConstraints { make in
+            make.leading.equalTo(12)
+            make.bottom.equalTo(backgroundView.snp.bottom).offset(-12)
+        }
+        
+        backgroundView.addSubview(titleImage)
+        titleImage.snp.makeConstraints { make in
+            make.centerY.equalTo(logoImageView.snp.centerY)
             make.leading.equalTo(logoImageView.snp.trailing).offset(12)
         }
         
-        addSubview(moreButton)
-        moreButton.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.trailing.equalTo(-12)
-        }
-        
-        addSubview(notificationButton)
+        backgroundView.addSubview(notificationButton)
         notificationButton.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.trailing.equalTo(moreButton.snp.leading).offset(-12)
+            make.centerY.equalTo(logoImageView.snp.centerY)
+            make.trailing.equalToSuperview().offset(-12)
+            make.width.height.equalTo(20)
         }
     }
 }

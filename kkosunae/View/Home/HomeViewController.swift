@@ -29,7 +29,6 @@ class HomeViewController: UIViewController {
     
     let customNavigationView: CustomNavigationView = {
         let view = CustomNavigationView()
-        view.titleLabel.text = "꼬순내"
         
         return view
     }()
@@ -62,8 +61,8 @@ class HomeViewController: UIViewController {
         self.view.addSubview(customNavigationView)
         customNavigationView.snp.makeConstraints { make in
             make.trailing.leading.equalTo(0)
-            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
-            make.height.equalTo(50)
+            make.top.equalToSuperview()
+            make.height.equalTo(105)
         }
         
         self.view.addSubview(scrollView)
