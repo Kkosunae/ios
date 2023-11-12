@@ -12,10 +12,12 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
+        walkResultView.setChartData(count: 12)
     }
     
     override func viewDidLayoutSubviews() {
         walkView.roundCorners(corners: [.topLeft, .topRight], radius: 22)
+        walkResultView.drawShadow(width: 0, height: 3, opacity: 0.11, radius: 7)
     }
     
     // MARK: - View
@@ -91,7 +93,7 @@ class HomeViewController: UIViewController {
         
         contentView.addSubview(walkResultView)
         walkResultView.snp.makeConstraints { make in
-            make.top.equalTo(walkView.snp.bottom).offset(18)
+            make.top.equalTo(walkView.snp.bottom).offset(20)
             make.leading.equalToSuperview().offset(24)
             make.trailing.equalToSuperview().offset(-24)
             make.height.equalTo(120)
