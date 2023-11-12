@@ -21,12 +21,15 @@ class TabBarController: UITabBarController {
         let communityVC = UINavigationController(rootViewController: CommunityViewController())
         let myPageVC = UINavigationController(rootViewController: MyPageViewController())
         
-        homeVC.tabBarItem = UITabBarItem(title: "홈", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
-        mapVC.tabBarItem = UITabBarItem(title: "지도", image: UIImage(systemName: "map"), selectedImage: UIImage(systemName: "map.fill"))
-        pointVC.tabBarItem = UITabBarItem(title: "포인트", image: UIImage(systemName: "dollarsign.circle"), selectedImage: UIImage(systemName: "dollarsign.circle.fill"))
-        communityVC.tabBarItem = UITabBarItem(title: "커뮤니티", image: UIImage(systemName: "person.3"), selectedImage: UIImage(systemName: "person.3.fill"))
-        myPageVC.tabBarItem = UITabBarItem(title: "마이페이지", image: UIImage(systemName: "person"), selectedImage: UIImage(systemName: "person.fill"))
+        homeVC.tabBarItem = UITabBarItem(title: "홈", image: UIImage(named: "icon_home")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "icon_home_selected")?.withRenderingMode(.alwaysOriginal))
+        mapVC.tabBarItem = UITabBarItem(title: "지도", image: UIImage(named: "icon_map")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "icon_map_selected")?.withRenderingMode(.alwaysOriginal))
+        communityVC.tabBarItem = UITabBarItem(title: "커뮤니티", image: UIImage(named: "icon_community")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "icon_community_selected")?.withRenderingMode(.alwaysOriginal))
+        pointVC.tabBarItem = UITabBarItem(title: "포인트", image: UIImage(named: "icon_point")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "icon_point_selected")?.withRenderingMode(.alwaysOriginal))
+        myPageVC.tabBarItem = UITabBarItem(title: "마이페이지", image: UIImage(named: "icon_my")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "icon_my_selected")?.withRenderingMode(.alwaysOriginal))
         
-        setViewControllers([homeVC, mapVC, pointVC, communityVC, myPageVC], animated: true)
+        tabBar.tintColor = .nightBlackColor
+        tabBar.unselectedItemTintColor = UIColor.init(hexCode: "8F8F8F")
+        
+        setViewControllers([homeVC, mapVC, communityVC, pointVC, myPageVC], animated: true)
     }
 }
