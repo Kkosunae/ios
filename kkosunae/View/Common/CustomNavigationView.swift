@@ -59,7 +59,7 @@ class CustomNavigationView: UIView {
         backgroundView.addSubview(logoImageView)
         logoImageView.snp.makeConstraints { make in
             make.leading.equalTo(12)
-            make.bottom.equalTo(backgroundView.snp.bottom).offset(-12)
+            make.bottom.equalTo(backgroundView.snp.bottom).offset(-16)
         }
         
         backgroundView.addSubview(titleImage)

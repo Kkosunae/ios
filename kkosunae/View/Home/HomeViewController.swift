@@ -14,6 +14,10 @@ class HomeViewController: UIViewController {
         setupLayout()
     }
     
+    override func viewDidLayoutSubviews() {
+        walkView.roundCorners(corners: [.topLeft, .topRight], radius: 22)
+    }
+    
     // MARK: - View
     let scrollView: UIScrollView = {
         let view = UIScrollView()
@@ -80,8 +84,8 @@ class HomeViewController: UIViewController {
         contentView.addSubview(walkView)
         walkView.snp.makeConstraints { make in
             make.top.equalTo(contentView.snp.top).offset(16)
-            make.leading.equalToSuperview().offset(24)
-            make.trailing.equalToSuperview().offset(-24)
+            make.leading.equalToSuperview()
+            make.trailing.equalToSuperview()
             make.height.equalTo(160)
         }
         

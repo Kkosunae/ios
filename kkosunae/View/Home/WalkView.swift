@@ -37,6 +37,7 @@ class WalkView: UIView {
     let dogImageView: UIImageView = {
         let view = UIImageView()
         view.image = UIImage(named: "img_dog")
+        view.contentMode = .scaleAspectFit
         
         return view
     }()
@@ -60,7 +61,6 @@ class WalkView: UIView {
     // Layout
     private func setupLayout() {
         backgroundColor = .white
-        layer.cornerRadius = 10
         layer.masksToBounds = true
         
         addSubview(topImageView)
